@@ -40,11 +40,19 @@
     <![endif]-->
 	
 	
-	
-
+	<!-- loader jquery -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(window).load(function() {
+	$(".loader").fadeOut("slow");
+})
+</script>
 </head>
 
 <body id="page-top">
+
+<!-- loader -->
+<div class="loader"></div>
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
