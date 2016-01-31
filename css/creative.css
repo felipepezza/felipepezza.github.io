@@ -474,3 +474,38 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #222;
 }
+
+footer {
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  background-color: #26262a;
+  position: relative;
+  padding: 5vh 10%;
+  width: 100vw;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.7);
+  transform-style: inherit;
+}
+
+footer > #rights {
+    padding: 15px;
+}
+
+footer > #links > a > i {
+    color: white;
+    font-size: 30px;
+    padding: 13px;
+}
+
+footer > #navigation-footer {
+    display: inline-flex;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+footer > #navigation-footer > .navigation-item {
+    margin: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
