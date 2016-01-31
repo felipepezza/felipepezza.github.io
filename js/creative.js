@@ -46,10 +46,7 @@
     new WOW().init();
 
     $(window).load(function(){
-        setTimeout(function() 
-        {
-            $(".loader").fadeOut("slow");
-        }, 3000);
+        $(".loader").fadeOut("slow");
     });
     
     
