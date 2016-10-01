@@ -1,500 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+	<title>Início</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+	<meta name="description" content="Your description">
+	<meta name="keywords" content="Your keywords">
+	<meta name="author" content="Your name">
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/touchTouch.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/kwicks-slider.css" type="text/css" media="screen">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/superfish.js"></script>
+	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="js/jquery.kwicks-1.5.1.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>	  
+	<script type="text/javascript" src="js/touchTouch.jquery.js"></script>
+	<script type="text/javascript">if($(window).width()>1024){document.write("<"+"script src='js/jquery.preloader.js'></"+"script>");}	</script>
 
-<head>
+	<script>		
+		 jQuery(window).load(function() {	
+		 $x = $(window).width();		
+	if($x > 1024)
+	{			
+	jQuery("#content .row").preloader();    }	
+		 
+     jQuery('.magnifier').touchTouch();			
+    jQuery('.spinner').animate({'opacity':0},1000,'easeOutCubic',function (){jQuery(this).css('display','none')});	
+  		  }); 
+				
+	</script>
 
+	<!--[if lt IE 8]>
+  		<div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>  
+ 	<![endif]-->
+	<!--[if (gt IE 9)|!(IE)]><!-->
+	<!--<![endif]-->
+	<!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+  <![endif]-->
+	</head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-	
-	
-
-
-    <title>Olá Mundo!</title>
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
-
-	
-	
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-
-    <!-- Custom Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
-
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/creative.css" type="text/css">
-
-    <body>
-        <div class="loader"></div>
-
-        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Page</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#about">Sobre</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Serviços</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#habilidades">Habilidades</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contato</a>
-                    </li>
-                    <!-- icone medium-->
-                    <li>
-                    <a href="https://medium.com/@felipepezza" alt="Medium"><img src="img/medium.png"></a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <header id="page-top">
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1>Bem vindo !</h1>
-                <hr class="light">
-                <p>"Design é função, não forma."</p>
-                <p>-Steve Jobs</p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">sobre min!</a>
-            </div>
-        </div>
-    </header>
-
-    <section class="bg-primary" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">O caminho das pedras</h2>
-                    <hr class="light">
-                    <p class="text-faded">Felipe Pezza, designer gráfico e apaixonado por fotografia, bike, música e vídeo games. Moro no litoral sul de São Paulo, mais especificamente em Itanhaém.
-Entre minhas especializações esta a criação de vetores e logotipos, tratamento de fotografia e branding. Proativo, criativo e focado, estão entre minhas principais qualidades como profissional. </p>
-                    <a href="https://drive.google.com/file/d/0B9sibyWktUVjSWhieHJoRnpzaTg/view?usp=sharing" class="btn btn-default btn-xl">Download Resumo</a>
+	<body>
+    <div class="spinner"></div> 
+<!--============================== header =================================-->
+<header>
+      <div class="container clearfix">
+    <div class="row">
+          <div class="span12">
+        <div class="navbar navbar_">
+              <div class="container">
+            <h1 class="brand brand_"><a href="index.html"><img alt="" src="img/logo.png"> </a></h1>
+            <a class="btn btn-navbar btn-navbar_" data-toggle="collapse" data-target=".nav-collapse_">Menu <span class="icon-bar"></span> </a>
+            <div class="nav-collapse nav-collapse_  collapse">
+                  <ul class="nav sf-menu">
+                <li class="active"><a href="index.html">Início</a></li>
+                <li class="sub-menu"><a href="index-1.html">Serviços</a>
+                      <!-- Sub menu 
+					  <ul>
+                    <li><a href="#">None</a></li>
+                    <li><a href="#">None</a></li>
+                    <li><a href="#">None</a></li>
+                  </ul>
+                    </li> -->
+                <li><a href="index-2.html">Portfólio</a></li>
+                <li><a href="404.html">Blog</a></li>
+                <li><a href="index-4.html">Contato</a></li>
+              </ul>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">A seu dispor</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-lightbulb-o  wow bounceIn text-primary"></i>
-                        <h3>Ilustração e Vetorização</h3>
-                        <p class="text-muted">Criação de vetores, logotipos e ilustração</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-camera-retro wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                        <h3>Fotografia e Edição</h3>
-                        <p class="text-muted">Tratamento de imagem em geral </p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-compass wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                        <h3>Branding</h3>
-                        <p class="text-muted">Estratégias de marketing e representação da sua marca</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-film wow bounceIn text-primary" data-wow-delay=".3s"></i>
-                        <h3>Edição de vídeos</h3>
-                        <p class="text-muted">Tratamento e edição de videos</p>
-                    </div>
-            </div>
-        </div>
-    </section>
-	<section id="habilidades">
-	<div align="center"><h2>Habilidades</h2></div>
-	 <hr>
-	 
-	</section>
-
-    <section class="no-padding" id="portfolio">
-        <div class="container-fluid">
-            <div class="row no-gutter">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="https://www.behance.net/gallery/32483989/Pug-Smile" class="portfolio-box">
-                        <img src="img/portfolio/1.jpg" class="img-responsive" alt="Behance Portfolio">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Ilustração 
-                                </div>
-                                <div class="project-name">
-                                    Pug Smile 
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="https://www.behance.net/gallery/32734259/Reprogramming" class="portfolio-box">
-                        <img src="img/portfolio/2.jpg" class="img-responsive" alt="Behance Portfolio">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Ilustração
-                                </div>
-                                <div class="project-name">
-                                    Reprogramming
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Em Breve!
-                                </div>
-                                <div class="project-name">
-                                    Em Breve!
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Em Breve!
-                                </div>
-                                <div class="project-name">
-                                    Em Breve!
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/5.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Em Breve!
-                                </div>
-                                <div class="project-name">
-                                    Em Breve!
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Em Breve!
-                                </div>
-                                <div class="project-name">
-                                    Em Breve!
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-	
-	<!-- #region Jssor Slider Begin -->
-
-    <!-- Generated by Jssor Slider Maker Online. -->
-    <!-- This demo works with jquery library -->
-
-    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-    <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
-    <!-- use jssor.slider.debug.js instead for debug -->
-    <script>
-        jQuery(document).ready(function ($) {
-            
-            var jssor_1_SlideoTransitions = [
-              [{b:5500,d:3000,o:-1,r:240,e:{r:2}}],
-              [{b:-1,d:1,o:-1,c:{x:51.0,t:-51.0}},{b:0,d:1000,o:1,c:{x:-51.0,t:51.0},e:{o:7,c:{x:7,t:7}}}],
-              [{b:-1,d:1,o:-1,sX:9,sY:9},{b:1000,d:1000,o:1,sX:-9,sY:-9,e:{sX:2,sY:2}}],
-              [{b:-1,d:1,o:-1,r:-180,sX:9,sY:9},{b:2000,d:1000,o:1,r:180,sX:-9,sY:-9,e:{r:2,sX:2,sY:2}}],
-              [{b:-1,d:1,o:-1},{b:3000,d:2000,y:180,o:1,e:{y:16}}],
-              [{b:-1,d:1,o:-1,r:-150},{b:7500,d:1600,o:1,r:150,e:{r:3}}],
-              [{b:10000,d:2000,x:-379,e:{x:7}}],
-              [{b:10000,d:2000,x:-379,e:{x:7}}],
-              [{b:-1,d:1,o:-1,r:288,sX:9,sY:9},{b:9100,d:900,x:-1400,y:-660,o:1,r:-288,sX:-9,sY:-9,e:{r:6}},{b:10000,d:1600,x:-200,o:-1,e:{x:16}}]
-            ];
-            
-            var jssor_1_options = {
-              $AutoPlay: true,
-              $SlideDuration: 800,
-              $SlideEasing: $Jease$.$OutQuint,
-              $CaptionSliderOptions: {
-                $Class: $JssorCaptionSlideo$,
-                $Transitions: jssor_1_SlideoTransitions
-              },
-              $ArrowNavigatorOptions: {
-                $Class: $JssorArrowNavigator$
-              },
-              $BulletNavigatorOptions: {
-                $Class: $JssorBulletNavigator$
-              }
-            };
-            
-            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
-            
-            //responsive code begin
-            //you can remove responsive code if you don't want the slider scales while window resizing
-            function ScaleSlider() {
-                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
-                if (refSize) {
-                    refSize = Math.min(refSize, 1920);
-                    jssor_1_slider.$ScaleWidth(refSize);
-                }
-                else {
-                    window.setTimeout(ScaleSlider, 30);
-                }
-            }
-            ScaleSlider();
-            $(window).bind("load", ScaleSlider);
-            $(window).bind("resize", ScaleSlider);
-            $(window).bind("orientationchange", ScaleSlider);
-            //responsive code end
-        });
-    </script>
-
-    <style>
-        
-        /* jssor slider bullet navigator skin 05 css */
-        /*
-        .jssorb05 div           (normal)
-        .jssorb05 div:hover     (normal mouseover)
-        .jssorb05 .av           (active)
-        .jssorb05 .av:hover     (active mouseover)
-        .jssorb05 .dn           (mousedown)
-        */
-        .jssorb05 {
-            position: absolute;
-        }
-        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
-            position: absolute;
-            /* size of bullet elment */
-            width: 16px;
-            height: 16px;
-            background: url('img/b05.png') no-repeat;
-            overflow: hidden;
-            cursor: pointer;
-        }
-        .jssorb05 div { background-position: -7px -7px; }
-        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
-        .jssorb05 .av { background-position: -67px -7px; }
-        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
-
-        /* jssor slider arrow navigator skin 22 css */
-        /*
-        .jssora22l                  (normal)
-        .jssora22r                  (normal)
-        .jssora22l:hover            (normal mouseover)
-        .jssora22r:hover            (normal mouseover)
-        .jssora22l.jssora22ldn      (mousedown)
-        .jssora22r.jssora22rdn      (mousedown)
-        */
-        .jssora22l, .jssora22r {
-            display: block;
-            position: absolute;
-            /* size of arrow element */
-            width: 40px;
-            height: 58px;
-            cursor: pointer;
-            background: url('img/a22.png') center center no-repeat;
-            overflow: hidden;
-        }
-        .jssora22l { background-position: -10px -31px; }
-        .jssora22r { background-position: -70px -31px; }
-        .jssora22l:hover { background-position: -130px -31px; }
-        .jssora22r:hover { background-position: -190px -31px; }
-        .jssora22l.jssora22ldn { background-position: -250px -31px; }
-        .jssora22r.jssora22rdn { background-position: -310px -31px; }
-    </style>
-
-
-    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden; visibility: hidden;">
-        <!-- Loading Screen -->
-        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
-            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
-            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
-        </div>
-        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1300px; height: 900px; overflow: hidden;">
-            <div data-p="225.00" style="display: none;">
-                <img data-u="image" src="img/slide/01.jpg" />
-                <div style="position: absolute; top: 30px; left: 30px; width: 480px; height: 120px; font-size: 50px; color: #ffffff; line-height: 60px;">Cartão pessoal de visitas</div>
-                <div style="position: absolute; top: 300px; left: 30px; width: 480px; height: 120px; font-size: 30px; color: #ffffff; line-height: 38px;">Uma das metas para 2016! ;)</div>
-              
-                </div>
-			
-            <div data-p="225.00" style="display: none;">
-                <img data-u="image" src="img/slide/02.jpg" />
-				<div style="position: absolute; top: 30px; left: 30px; width: 480px; height: 120px; font-size: 50px; color: #ffffff; line-height: 60px;">Local de trabalho</div>
-                <div style="position: absolute; top: 300px; left: 30px; width: 480px; height: 120px; font-size: 30px; color: #ffffff; line-height: 38px;">Em breve!</div>
-            </div>
-            <div data-p="225.00" style="display: none;">
-                <img data-u="image" src="img/slide/02.jpg" />
-				<div style="position: absolute; top: 30px; left: 30px; width: 480px; height: 120px; font-size: 50px; color: #ffffff; line-height: 60px;">Em breve!</div>
-                <div style="position: absolute; top: 300px; left: 30px; width: 480px; height: 120px; font-size: 30px; color: #ffffff; line-height: 38px;"></div>
-            </div>
-        </div>
-        <!-- Bullet Navigator -->
-        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
-            <!-- bullet navigator item prototype -->
-            <div data-u="prototype" style="width:16px;height:16px;"></div>
-        </div>
-        <!-- Arrow Navigator -->
-        <span data-u="arrowleft" class="jssora22l" style="top:0px;left:12px;width:40px;height:58px;" data-autocenter="2"></span>
-        <span data-u="arrowright" class="jssora22r" style="top:0px;right:12px;width:40px;height:58px;" data-autocenter="2"></span>
-        <a href="http://www.jssor.com" style="display:none">Slideshow Maker</a>
-    </div>
-
-    <!-- #endregion Jssor Slider End -->
-    
-    <!-- Instagram -->
-	<section>
-	 <div class="container">
-                <div class="row">
-    <table width="100%" border="0" align="center" >
-    
-      <tr> 
-        <td width="100%">
-    <div align="center"  >
-    <h2>This is  my life </h2>
-	<hr>
-      <table  border="0" align="center" cellpadding="0" cellspacing="30">
-       <tr>
-       <td valign="top" width="120"><div align="center"><img class="thumb" src="img/thumbnails/thumb_bikefixaproject.jpg" width="120" height="90"></div></td>
-        <td valign="top" width="120"><div align="center"><img class="thumb" src="img/thumbnails/thumb_01.jpg" width="120" height="90"><br><p> </p></div></td>
-        <td valign="top" width="120"><div align="center"><img class="thumb" src="img/thumbnails/thumb_04.jpg" width="120" height="90"></div></td>
-        <td valign="top" width="120"><div align="center"><img class="thumb" src="img/thumbnails/thumb_100_4243.jpg" width="120" height="90"></div></td>
-        <td valign="top" width="120"><div align="center"><img class="thumb" src="img/thumbnails/thumb_ps3.jpg" width="120" height="90"></div></td>
-       
-       </tr>
-       <tr>
-        <td valign="top" width="120"><div align="center"><img class="thumb" src="img/thumbnails/thumb_rodovia.jpg" width="120" height="90"></div></td>
-        <td valign="top" width="120"><div align="center"><img class="thumb" src="img/thumbnails/thumb_beco.jpg" width="120" height="90"></div></td>
-        <td valign="top" width="120"><div align="center"><img class="thumb" src="img/thumbnails/thumb_Rockabilly_guy.jpg" width="120" height="90"></div></td>
-        <td valign="top" width="120"><div align="center"><img class="thumb" src="img/thumbnails/thumb_fotografo.jpg" width="120" height="90"></div></td>
-        <td valign="top" width="120"><div align="center"><img class="thumb" src="img/thumbnails/thumb_luz.jpg" width="120" height="90"></div></td>
-        
-       </tr>
-      </table>
-      <!-- Instagram button -->
-      <a href="https://www.instagram.com/pezzafelipe/"><img src="img/instagram.png"></a> 
-      
-    </div>
-
-         </td>
-      </tr>
-    </table>
-	</div>
-	</div>
-        </section>
-		
-        <section id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                        <h2 class="section-heading">Entre em contato!</h2>
-                        <hr class="primary">
-                        <p>Gostaria de algum trabalho específico mas não sabe como idealizar? Contate-me para trabalharmos juntos.</p>
-                    </div>
-                    <div class="col-lg-4 col-lg-offset-2 text-center">
-                        <i class="fa fa-whatsapp fa-3x wow bounceIn"></i>
-                        <p>+55 11 94842-3464</p>
-                    </div>
-                    <div class="col-lg-4 text-center">
-                        <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                        <p><a href="mailto:felipepezza@gmail.com">felipepezza@gmail.com</a></p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <footer>
-          <div align="center"><img src="img/logo-footer.png"></div>
-		  <div id="navigation-footer">
-            <div id="home-nav" class="navigation-item">Home</div>
-            <div id="resume-nav" class="navigation-item">Sobre</div>
-			<div id="habilidades-nav" class="navigation-item">Habilidades</div>
-            <div id="portfolio-nav" class="navigation-item">Portifólio</div>
-            <div id="contact-nav" class="navigation-item">Contato</div>
           </div>
-          <div id="links"><a href="https://www.behance.net/felipepezz75ef"><i class="fa fa-behance"></i></a><a href="http://felipepezza.daportfolio.com"><i class="fa fa-deviantart"></i></a><a href="https://www.instagram.com/pezzafelipe/"><i class="fa fa-instagram"></i></a><a href="https://plus.google.com/116887119802425852136"><i class="fa fa-google-plus"></i></a><a href="https://br.linkedin.com/in/felipe-pezza-744163106"><i class="fa fa-linkedin"></i></a><a href="https://github.com/felipepezza"><i class="fa fa-github"></i></a>
-<a href="https://medium.com/@felipepezza"><i class="fa fa-medium"></i></a></div>
-          <div id="rights">© 2016 Felipe Pezza de Souza Borges. All rights reserved. Designer</div>
-        </footer>
-    </body>
+            </div>
+      </div>
+        </div>
+  </div>
+    </header>
+<div class="bg-content">
+      <div class="container">
+    <div class="row">
+          <div class="span12"> 
+        <!--============================== slider =================================-->
+        <div class="flexslider">
+              <ul class="slides">
+            <li> <img src="img/slide-1.jpg" alt="" > </li>
+            <li> <img src="img/slide-2.jpg" alt="" > </li>
+            <li> <img src="img/slide-3.jpg" alt="" > </li>
+            <li> <img src="img/slide-4.jpg" alt="" > </li>
+            <li> <img src="img/slide-5.jpg" alt="" > </li>
+          </ul>
+            </div>
+        <span id="responsiveFlag"></span>
+        <div class="block-slogan">
+              <h2>Bem Vindo!</h2>
+              <div><p>Olá, seja bem vindo e obrigado por visitar meu site pessoal. Conheça um pouco do meu trabalho como modelo fotográfico e entre contato para maiores informoções referente a contratação de meus serviços.</p>
+          </div>
+            </div>
+      </div>
+        </div>
+  </div>
+      
+      <!--============================== content =================================-->
+      
+      <div id="content" class="content-extra"><div class="ic">More Website Templates @ TemplateMonster.com. November19, 2012!</div>
+    <div class="row-1">
+          <div class="container">
+        <div class="row">
+              <ul class="thumbnails thumbnails-1">
+            <li class="span3">
+                  <div class="thumbnail thumbnail-1">
+                <h3>Em Breve!</h3>
+                <img  src="img/page1-img1.jpg" alt="">
+                <section> <strong>Projeto</strong>
+                      <p>Descrição.</p>
+                      <a href="#" class="btn btn-1">Veja Mais</a> </section>
+              </div>
+                </li>
+            <li class="span3">
+                  <div class="thumbnail thumbnail-1">
+                <h3>Em Breve!</h3>
+                <img  src="img/page1-img2.jpg" alt="">
+                <section> <strong>Projeto</strong>
+                      <p>Descrição.</p>
+                      <a href="#" class="btn btn-1">Veja Mais</a> </section>
+              </div>
+                </li>
+            <li class="span3">
+                  <div class="thumbnail thumbnail-1">
+                <h3>Em Breve!</h3>
+                <img  src="img/page1-img3.jpg" alt="">
+                <section> <strong>Projeto</strong>
+                      <p>Descrição.</p>
+                      <a href="#" class="btn btn-1">Veja Mais</a> </section>
+              </div>
+                </li>
+            <li class="span3">
+                  <div class="thumbnail thumbnail-1">
+                <h3 class="title-1 extra">Em Breve!</h3>
+                <img  src="img/page1-img4.jpg" alt="">
+                <section> <strong>Projeto</strong>
+                      <p>Descrição.</p>
+                      <a href="#" class="btn btn-1">Veja Mais</a> </section>
+              </div>
+                </li>
+          </ul>
+            </div>
+      </div>
+        </div>
+    <div class="container">
+          <div class="row">
+        <article class="span6">
+              <h3>Sobre Min</h3>
+              <div class="wrapper">
+            <figure class="img-indent"><img src="img/page1-img5.jpg " alt="" /></figure>
+            <div class="inner-1 overflow extra">
+                  <div class="txt-1">Sou Felipe Pezza, tenho 20 anos e moro em Itanhaém-SP.</div>
+                  Modelo fotográfico, atleta amante do ciclismo e de malhar.
+                  <div class="border-horiz"></div>
+                  <div class="overflow">
+                <ul class="list list-pad">
+                      <li><a href="#">Campaigns</a></li>
+                      <li><a href="#">Portraits</a></li>
+                      <li><a href="#">Fashion</a></li>
+                      <li><a href="#">Fine Art</a></li>
+                    </ul>
+					<!--
+                <ul class="list">
+                      <li><a href="#">Advertising</a></li>
+                      <li><a href="#">Lifestyle</a></li>
+                      <li><a href="#">Love story</a></li>
+                      <li><a href="#">Landscapes</a></li>
+                    </ul>
+					-->
+              </div>
+                </div>
+          </div>
+            </article>
+        <article class="span6">
+              <h3>Últimas Fotos</h3>
+              <ul class="list-photo">
+            <li><a href="img/image-blank.png" class="magnifier" ><img src="img/page1-img6.jpg " alt="" /></a></li>
+            <li><a href="img/image-blank.png" class="magnifier" ><img src="img/page1-img7.jpg " alt="" /></a></li>
+            <li><a href="img/image-blank.png" class="magnifier" ><img src="img/page1-img8.jpg " alt="" /></a></li>
+            <li class="last"><a href="img/image-blank.png" class="magnifier" ><img src="img/page1-img9.jpg " alt="" /></a></li>
+            <li><a href="img/image-blank.png" class="magnifier" ><img src="img/page1-img10.jpg " alt="" /></a></li>
+            <li><a href="img/image-blank.png" class="magnifier" ><img src="img/page1-img11.jpg " alt="" /></a></li>
+            <li><a href="img/image-blank.png" class="magnifier" ><img src="img/page1-img12.jpg " alt="" /></a></li>
+            <li class="last"><a href="img/image-blank.png" class="magnifier" ><img src="img/page1-img13.jpg " alt="" /></a></li>
+            <li><a href="img/image-blank.png" class="magnifier" ><img src="img/page1-img14.jpg " alt="" /></a></li>
+            <li><a href="img/image-blank.png" class="magnifier" ><img src="img/page1-img15.jpg " alt="" /></a></li>
+            <li><a href="img/image-blank.png" class="magnifier" ><img src="img/page1-img16.jpg " alt="" /></a></li>
+            <li class="last"><a href="img/image-blank.png" class="magnifier" ><img src="img/page1-img17.jpg " alt="" /></a></li>
+          </ul>
+            </article>
+      </div>
+        </div>
+  </div>
+    </div>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.fittext.js"></script>
-    <script src="js/wow.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/creative.js"></script>
-
-    <script src="js/analytics.js"></script>
-
+<!--============================== footer =================================-->
+<footer>
+      <div class="container clearfix">
+    <ul class="list-social pull-right">
+          <li><a class="icon-1" href="#"></a></li>
+          <li><a class="icon-2" href="#"></a></li>
+          <li><a class="icon-3" href="#"></a></li>
+          <li><a class="icon-4" href="#"></a></li>
+        </ul>
+    <div class="privacy pull-left">Todos os direitos reservados a Felipe Pezza.</div>
+  </div>
+    </footer>
+<script type="text/javascript" src="js/bootstrap.js"></script>
 </body>
-
 </html>
